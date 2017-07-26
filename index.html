@@ -1,84 +1,48 @@
 
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio Site</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
-        <style type="text/css">
-
-            body, html {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                height: 100%;
-            }
-
-            body{
-                font-family: Roboto;
-                font-size: 14px;
-                color: #2d3c49;
-            }
-
-            h1, h2, h3{
-                font-weight: 500;
-            }
-
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            .header{
-                border-bottom: 4px solid #7d97ad;
-            }
-
-            .header_title{
-                display: inline-block;
-            }
-
-            .right{
-                float: right;
-            }
-
-            .works_title{
-                color: #7d97ad
-            }
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
-        <header class="header">
-            <a class="header_logo" href="/" rel="home"><img src="images/logo.png" alt="Portfolio Site"></a>
-            <div class="header_title right">
-                <h1>Oleksii Zhurbytskyi</h1>
-                <p>SOFTWARE ENGENEER</p>
-            </div>
-        </header>
-        <main>
-            <section class="content">
-                <section class=""></section>
-                <section class="featured">
-                    <h2 class="works_title">Featured Works</h2>
-                    <ul>
-                        <li class="snippet">
-                            <img class="snippet_thumbnail" src="images/stalker.png" alt="Stalker Middleware">
+        <div class="container">
+            <header class="header">
+                <a href="/" rel="home"><img class="header_logo" src="img/logo.png" alt="Portfolio Site"></a>
+                <div class="header_title right">
+                    <h1>Oleksii Zhurbytskyi</h1>
+                    <p>SOFTWARE ENGENEER</p>
+                </div>
+            </header>
+            <main>
+                <div class="content">
+                    <div class="award">
+                        <img class="award_image" src="img/open_call.jpg" alt="Google ADK Open Call Finalists">
+                    </div>
+                    <section class="featured">
+                        <h2 class="works_title">Featured Works</h2>
+                        <article class="snippet">
+                            <img class="snippet_thumbnail" src="img/stalker.png" alt="Stalker Middleware">
                             <h3 class="snippet_title">Stalker Middleware</h3>
                             <p>https://github.com/azhurb/stalker_portal</p>
-                        </li>
-                        <li class="snippet">
-                            <img class="snippet_thumbnail" src="images/ledmatrix.png" alt="ADK LedMatrix">
+                        </article>
+                        <article class="snippet">
+                            <img class="snippet_thumbnail" src="img/ledmatrix.png" alt="ADK LedMatrix">
                             <h3 class="snippet_title">ADK LedMatrix</h3>
                             <p>https://github.com/azhurb/LedMatrix</p>
-                        </li>
-                        <li class="snippet">
-                            <img class="snippet_thumbnail" src="images/ledmatrix.png" alt="ADK LedMatrix">
-                        </li>
-                    </ul>
-                </section>
-            </section>
-        </main>
+                        </article>
+                        <article class="snippet">
+                            <img class="snippet_thumbnail" src="img/dumpstream.png" alt="Dumpstream">
+                            <h3 class="snippet_title">Dumpstream</h3>
+                            <p>https://github.com/azhurb/dumpstream</p>
+                        </article>
+
+                    </section>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
